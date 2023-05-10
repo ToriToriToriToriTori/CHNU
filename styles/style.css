@@ -1,0 +1,249 @@
+:root{
+
+
+    --color-bg: #f1f3f5;
+    --color-accent-dark: #2a5d84;
+    --color-accent-light: #f1f3f5;
+    --color-support-light: #fff3bf; 
+
+    --color-red: #FF7B54;
+    --color-yellow: #ffe066;
+    --color-green: #939B62;
+
+}
+
+*{
+    background-color: var(--color-bg);
+    color: var(--color-accent-dark);
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: var(--color-accent-dark) !important;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.display-none{
+    display: none !important;
+}
+
+::selection{
+    background-color: var(--color-support-light);
+    color: var(--color-accent-dark);
+}
+
+.text-box{
+
+    padding: 15px;
+}
+
+h3{
+    margin-top: 18px;
+}
+
+h6{
+    max-width: 60%;
+    text-align: center;
+    margin-left: auto; margin-right: auto;
+}
+
+
+.nav{
+    background-color: var(--color-accent-dark);
+    height: auto;
+    padding: 10px;
+}
+
+.nav > li, .nav > li > a{
+    background: none;
+    color: var(--color-bg) !important;
+    text-transform: uppercase;
+}
+.nav > li > a:hover{
+    opacity: 100%;
+    text-decoration: underline;
+    transition: 1.5s !important;
+}
+
+footer{
+    background-color: var(--color-accent-dark) !important;
+    height: auto;
+    padding:0px;
+
+    min-height: 10px;
+    
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;        
+    text-align: center;
+}
+.pt-4{
+    background: none;
+}
+
+
+.shadow1{
+    -webkit-box-shadow: 2px 2px 0px 3px rgba(42,93,132,1);
+    -moz-box-shadow: 2px 2px 0px 3px rgba(42,93,132,1);
+    box-shadow: 2px 2px 0px 3px rgba(42,93,132,1);
+}
+
+
+/*MAINPAGE*/
+
+.banner{
+    height: 50vh;
+    background-size: cover;
+    background-color: #939B62;
+
+    background-image: url("./sourse/lightbulb-3104355_1920.jpg");
+   
+    width: 100%;
+
+}
+@media (min-width: 768px) {
+    .banner{
+        height: 70vh;
+    }
+}
+
+
+
+.page-content{
+    margin: 20px 50px 100px;
+}
+.page-img{
+    height: 300px;
+    width: 100%;
+    background-size:contain;
+}
+.page-text{
+    margin-top: 10%;
+}
+
+
+
+/*Steps*/
+.steps-container {
+    display: flex;
+    width: 85%;
+    gap: 25px;
+
+    margin-left: auto; margin-right: auto;
+
+}
+.steps-item {
+    border: 2px double;
+    padding: 24px;
+}
+.steps-item>h2{
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.steps-item>h4{
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.steps-num {
+    opacity: 30%;
+    font-size: 64px;
+    margin: 0;
+}
+
+
+.companies{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-accent-dark);
+    padding: 25px;
+}
+.companies>img{
+    height: 50px;
+}
+
+
+/*forms*/
+
+input, select{
+    border: none;
+    border-bottom: 3px solid var(--color-accent-dark);
+    background: none;
+
+
+    font-size: 18px !important;
+    width: 90%;   
+    padding: 5px;
+
+    position: relative;
+    margin-left: auto; margin-right: auto;
+
+    margin-top: 15px !important;
+}
+input >.submit{
+    background-color: #2a5d84 !important;
+    border: none !important;
+}
+
+.registration-box{
+    margin-top: 15vh;
+    padding: 20px 15px;
+}
+
+.reg-type-btn > a{
+    font-size: 18px;
+}
+.reg-type-btn{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:focus{
+    border: none;
+}
+
+.registration-form-btn{
+
+    font-size: 18px !important;
+    width: auto;   
+    padding: 8px;
+
+    border: none;
+
+    margin-right: 15px;
+    display: block;
+    margin-top: 18px;
+
+
+    background-color: var(--color-accent-dark);
+    color: var(--color-bg);
+
+    text-transform: uppercase;
+
+}
+
+.invalid{
+    border-color: var(--color-red) !important;
+    background-color: var(--color-yellow) !important;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .page{
+       margin-top: 100px;
+    }
+}
+

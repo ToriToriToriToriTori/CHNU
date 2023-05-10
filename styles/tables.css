@@ -1,0 +1,54 @@
+table{
+    border: 4px double var(--color-accent-dark);
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+td, tr{
+    padding: 0;
+    border: 1px dotted var(--color-accent-dark) !important;
+    text-transform: capitalize;
+}
+
+.table-group:hover{
+    text-decoration: underline;        
+}
+
+.table-heading-row {
+    font-weight: bold;
+    text-align: center;
+}
+.table-hours-row >td{
+    min-width: 50px;
+}
+.free-row {
+}
+.table-group {
+}
+.table-group-name {
+}
+.table-g {
+    background-color: var(--color-green);
+}
+.table-r {
+    background-color: var(--color-red);
+}
+.table-y {
+    background-color: var(--color-yellow);
+}
+
+.table-legend{
+    
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.table-legend >div{
+    padding: 5px 5px;
+    width: 30%;
+    text-align: center;
+    height: auto;
+}
+
+

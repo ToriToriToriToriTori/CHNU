@@ -1,0 +1,75 @@
+:root{
+
+
+    --color-bg: #f1f3f5;
+    --color-accent-dark: #2a5d84;
+    --color-accent-light: #f1f3f5;
+    --color-support-light: #fff3bf; 
+
+    --color-red: #FF7B54;
+    --color-yellow: #ffe066;
+    --color-green: #939B62;
+
+}
+.news-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    padding: 40px;
+}
+.newsblok {
+    display: block;
+    align-items:start;
+    width: 100%;
+    padding: 15px;
+}
+
+.newsblok>div{
+    padding: 12px;
+}
+.newsblok>div>a{
+    font-size: 24px;
+    text-decoration: none;
+}
+.newsblok>div>span{
+    font-size: smaller;
+    font-weight: lighter;
+    opacity: 80%;
+    letter-spacing: 2px;
+}
+
+.newsblok>img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.shadow1{
+    -webkit-box-shadow: 2px 2px 0px 3px rgba(42,93,132,1);
+    -moz-box-shadow: 2px 2px 0px 3px rgba(42,93,132,1);
+    box-shadow: 2px 2px 0px 3px rgba(42,93,132,1);
+}
+
+
+@media (max-width: 768px) {
+
+    .newsblok{
+       display: flex;
+    }
+
+    .news-list{
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+
+    .newsblok>img{
+        height:250px;
+    }
+}
+
+.newsblok>div>p::after{
+    content: '...';
+}
+
