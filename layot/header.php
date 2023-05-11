@@ -44,7 +44,11 @@
                 <?php } else { ?>
 
                   <li class="nav-item">
-                  <a class="nav-link" href="index.php?action=graphicediting">+</a>
+                  <a class="nav-link" href="index.php?action=editnews">Друкарня</a>
+                  </li>
+
+                  <li class="nav-item">
+                  <a class="nav-link" href="index.php?action=graphicediting">Налаштувати Графік</a>
                   </li>
                   
                   <li class="nav-item">

@@ -52,3 +52,73 @@ td, tr{
 }
 
 
+.news-edit-page {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.add-new-post{
+    max-width: 60%;
+    padding: 24px;
+}
+.add-new-post>form>input {
+    border: 2px solid var(--color-accent-dark);
+}
+.add-new-post>form>.submit-btn{
+    background-color: var(--color-accent-dark);
+    color: white;
+    padding: 5px 10px;
+    width: auto;
+}
+.add-new-post>form>.submit-btn:hover{
+    transition: 1s;
+    background-color: white;
+    color: var(--color-accent-dark);
+}
+.latest-posts {
+    padding: 24px;
+    width: 30%;
+
+}
+.post {
+
+    width: auto;
+    border: 2px solid var(--color-accent-dark);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    border-radius: 10px;
+    padding: 18px;
+
+    position: relative;
+
+}
+
+.post>img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.buttons{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: auto; height: auto;
+
+}
+.delete {
+    background: none;
+    border: none;
+    color: var(--color-red) ;
+}
+.edit {
+    color: var(--color-green) ;
+
+    background: none;
+    border: none;
+}
